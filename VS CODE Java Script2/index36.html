@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container mt-3">
+        
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" class="form-control" name="username" maxlength="5" required> <!--required dediğim için boş geçilemez hale getirdi-->
+       </div>
+      
+      <div class="form-group">
+        <label for="number">Password</label>
+        <!--required dediğim için boş geçilemez hale getirdi 
+            max değeri vererek girilecek en büyük değere sabitledik min ile en ufak değere sabitledik--> 
+        <input type="number" id="number" class="form-control" name="nember" max="10" min="5"  required> 
+      </div>
+      
+      <!--valideteForm fonksiyonunu butonda click olunca çağırdık-->
+      <button type="button" class="btn btn-success mt-2" onclick="validateForm5();">Form Submit</button> 
+ 
+    <!--display:none diyerek ilk aşamada görünürlüğü kapattık-->
+    <p id="resultTrue" class="alert alert-success mt-2" style="display: none;"></p>
+    <p id="resultFalse" class="alert alert-danger mt-2" style="display: none;"></p>
+   </div>
+
+  <hr>
+
+   <div class="container mt-3">
+    <form id="formValidate" name="formValidate">
+        <div class="form-group">
+            <label for="username1">Username</label>
+            <input type="text" id="username1" class="form-control" name="username1" maxlength="5" required> <!--required dediğim için boş geçilemez hale getirdi-->
+       </div>
+
+        <div class="form-group form-check">
+            <input type="checkbox" id="chcbox" name="chcbox" class="form-check-input">
+            <label for="chcbox" class="form-check-label">üyelik sözleşmesini okudum ve onaylıyorum</label>
+        </div>
+
+        <!--valideteForm fonksiyonunu butonda click olunca çağırdık-->
+      <button type="button" class="btn btn-success mt-2" onclick="validateForm6();">Form Submit</button> 
+ 
+      <!--display:none diyerek ilk aşamada görünürlüğü kapattık-->
+      <p id="result1True" class="alert alert-success mt-2" style="display: none;"></p>
+      <p id="result1False" class="alert alert-danger mt-2" style="display: none;"></p>
+    </form>
+   </div>
+    
+
+
+
+
+    <script src="script36.js" type="text/javascript"></script>
+</body>
+</html>

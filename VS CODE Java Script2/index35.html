@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <!--html5 required özelliği kullanmadan validate-->
+    <div class="container mt-3">
+        <!--bu form sumbit edilecekken bir tane fonksiyon döndürüyoruz-->
+        <form id="frmBegin" name="frmBegin" action="#" method="post" onsubmit="return validateForm();">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" class="form-control" name="username"> 
+           </div>
+          
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="text" id="password" class="form-control" name="password">
+          </div>
+          
+          <button type="submit" class="btn btn-success mt-2">Form Submit</button> 
+        </form> 
+        <!--display:none diyerek ilk aşamada görünürlüğü kapattık-->
+        <p id="res1" class="alert alert-danger mt-2" style="display: none;"></p>
+       </div>
+  
+       <hr>
+       <!--html 5 ile gösterim burada required yazınca diğer işlemlere gerek kalmıyor html5 kendi boş geçilemez uyarısını çıkarıyor-->
+
+       <div class="container mt-3">
+        <!--html5 de onSubmit() yazmamıza gerek kalmıyor fonksiyon döndürmemize gerek yok-->
+        <form id="frmBegin" name="frmBegin" action="#" method="post">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" class="form-control" name="username" required> <!--required dediğim için boş geçilemez hale getirdi-->
+           </div>
+          
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="text" id="password" class="form-control" name="password" required> <!--required dediğim için boş geçilemez hale getirdi--> 
+          </div>
+          
+          <button type="submit" class="btn btn-success mt-2">Form Submit</button> 
+        </form> 
+        <!--display:none diyerek ilk aşamada görünürlüğü kapattık-->
+        <p id="res1" class="alert alert-danger mt-2" style="display: none;"></p>
+       </div>
+
+       <hr>
+
+       <div class="container mt-3">
+        
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username1" class="form-control" name="username" required> <!--required dediğim için boş geçilemez hale getirdi-->
+           </div>
+          
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="text" id="password1" class="form-control" name="password" required> <!--required dediğim için boş geçilemez hale getirdi--> 
+          </div>
+          
+          <!--valideteForm fonksiyonunu butonda click olunca çağırdık-->
+          <button type="button" class="btn btn-success mt-2" onclick="validateForm1();">Form Submit</button> 
+     
+        <!--display:none diyerek ilk aşamada görünürlüğü kapattık-->
+        <p id="res2" class="alert alert-danger mt-2" style="display: none;"></p>
+       </div>
+        
+      
+
+    <script src="script35.js" type="text/javascript"></script>
+</body>
+</html>

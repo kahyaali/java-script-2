@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <style>
+        #demo{
+            width: 200px;
+            height: 60px;
+            color: white;
+            background-color: crimson;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <!--bu elementte değişiklik olduğunda çalışacak fonksiyonu tetikleyecek-->
+     <input type="text" id="username" onchange="javascript:changeFunction();" class="form-control mb-3">
+     <img src="img/on.png" alt="" width="100" height="150" id="picture1" onmouseover="fnOver(this);" onmouseout="fnOut(this);">
+     <img src="img/on.png" alt="" width="100" height="150" id="picture2">
+     <img src="img/off.png" alt="" width="100" height="100" id="picture3" onmousemove="fnmove(this);">
+     <img src="img/on.png" alt="" width="100" height="100" id="picture4">
+
+     <p id="result">deneme</p>
+      <div id="demo">javascript</div>        
+    </div>
+
+
+
+
+
+    <script src="script48.js" type="text/javascript"></script>
+</body>
+</html>

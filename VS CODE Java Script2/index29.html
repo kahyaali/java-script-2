@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="externaljs" type="button">Script Ekle</button>
+
+
+
+
+
+
+
+    <!--bu sayfa yüklendiğine javascirpt dosyasını yüklüyor-->
+    <script>
+       window.onload=function()
+        {
+          var getElement=document.createElement("script");
+          getElement.type="text/javascript";
+          getElement.src="script29.js";
+          /* body'nin içine ekledik sonuna ekranda f12 diyerek elements kısmından kontrol ettiğimizde eklendiğini görebiliriz*/
+          document.body.appendChild(getElement); 
+         }
+    </script>
+
+    <!--buda butona tıklayınca javascript dosyasını yükleme yapmak-->
+    <script>
+        var getJS=document.getElementById('externaljs');
+        getJS.onclick=function()
+        {
+        var getElement=document.createElement('script');
+        getElement.type='text/javascript';
+        getElement.src='script29.js';
+        
+        document.head.appendChild(getElement);
+        document.getElementsByTagName('head')[0].appendChild(getElement); /* bu şekilde de ekleyebilirim*/
+        }
+    </script>
+</body>
+</html>
